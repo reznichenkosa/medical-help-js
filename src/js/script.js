@@ -176,7 +176,7 @@ function Modal() {
       } else {
         const formMessage = document.querySelector('[data-message]');
         
-        formMessage.textContent = 'Не верные данные';
+        formMessage.textContent = 'Неверные данные!';
         setTimeout(() => {
           formMessage.textContent = '';
         }, 3000);
