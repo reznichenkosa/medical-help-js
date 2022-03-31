@@ -1,0 +1,125 @@
+.home {
+    
+    animation-name: scale;
+    animation-duration: 1s;
+
+    &__wrapper {
+        padding: 96px 127px;
+    }
+
+    &__btns {
+        margin-top: 35px;
+        display: flex;
+    }
+
+    &__link {
+        color: var(--color-primary);
+        &:hover {
+            text-decoration: none;
+            color: var(--color-primary);
+        }
+    }
+
+    &__services {
+        margin-top: 96px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__service {
+        display: flex;
+        flex-direction: column;
+        padding: 35px 40px;
+        width: 328px;
+        height: 248px;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        margin-bottom: 30px;
+
+        &-icon {
+            width: 72px;
+            height: 72px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-danger);
+            border-radius: 100%;
+        }
+
+        &-title {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: var(--color-first);
+
+            &::after {
+                content: '';
+                display: block;
+                margin-top: 20px;
+                width: 50px;
+                height: 2px;
+                background-color: var(--color-danger);
+            }
+        }
+
+        &-desc {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            line-height: 14px;
+            color: var(--color-second);
+        }
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .home {
+    
+        &__wrapper {
+            padding: 50px 50px;
+        }
+
+        &__title {
+            font-size: 35px;
+            line-height: 39px;
+        }
+
+        &__services {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .home {
+    
+        &__wrapper {
+            padding: 50px 50px;
+        }
+
+        &__title {
+            font-size: 28px;
+            line-height: 39px;
+        }
+        &__services {
+            margin-top: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .home {
+    
+        &__wrapper {
+            padding: 55px 0px;
+        }
+
+        &__title {
+            font-size: 28px;
+            line-height: 39px;
+        }
+    }
+}

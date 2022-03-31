@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import 'libs/bootstrap-reboot.min';
+
+:root {
+    --color-first: #252B42;
+    --color-second: #737373;
+    --color-primary: #FF685B;
+    --color-danger: #E74040;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-y: scroll;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+.container {
+    width: 1318px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: inherit;
+    position: relative;
+}
+
+@import 'blocks/buttons';
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/home';
+@import 'blocks/cabinet';
+@import 'blocks/contacts';
+@import 'blocks/modal';
+
+
+@media (max-width: 1399.98px) { 
+    .container {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1199.98px) { 
+    .container {
+        width: 990px;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .container {
+        width: 767px;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .container {
+        width: 575px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .container {
+        width: 375px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 374.98px) { 
+    .container {
+        width: 320px;
+        padding: 0 10px;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
